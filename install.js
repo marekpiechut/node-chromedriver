@@ -13,7 +13,7 @@ var rimraf = require('rimraf').sync
 var util = require('util')
 
 var libPath = path.join(__dirname, 'lib', 'chromedriver')
-var cdnUrl = process.env.npm_config_chromedriver_cdnurl || process.env.CHROMEDRIVER_CDNURL || 'http://chromedriver.storage.googleapis.com'
+var cdnUrl = process.env.npm_config_chromedriver_cdnurl || process.env.CHROMEDRIVER_CDNURL || 'https://chromedriver.storage.googleapis.com'
 // adapt http://chromedriver.storage.googleapis.com/
 cdnUrl = cdnUrl.replace(/\/+$/, '')
 var downloadUrl = cdnUrl + '/%s/chromedriver_%s.zip'
